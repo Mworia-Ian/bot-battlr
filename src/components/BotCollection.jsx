@@ -18,7 +18,7 @@ function BotCollection() {
   return (
     <div className="columns-4 p-10">
       {bots.map((bot) => (
-        <div key={bot.id} className="max-w-sm rounded overflow-hidden shadow-lg bg-stone-200 mb-5 ">
+        <div key={bot.id} className="max-w-sm rounded overflow-hidden shadow-lg bg-green-500 mb-5 ">
           <img
             className="w-full"
             src={bot.avatar_url}
