@@ -24,10 +24,14 @@ function BotCollection() {
     }
   };
 
+  const removeFromArmy = (botToRemove) => {
+    setSelectedBots(selectedBots.filter(bot => bot.id !== botToRemove.id));
+  };
+
   return (
     <>
       <div className="columns-4">
-        <MyBotArmy selectedBots={selectedBots} />
+        <MyBotArmy selectedBots={selectedBots} removeFromArmy={removeFromArmy} />
       </div>
       <div className="columns-4 p-10 bg-green-200 mt-5">
         {bots.map((bot) => (

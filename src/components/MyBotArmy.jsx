@@ -1,12 +1,12 @@
-function MyBotArmy({ selectedBots }) {
+function MyBotArmy({ selectedBots , removeFromArmy}) {
   return (
     <div>
-      {/* <h1 className="text-xl-center"><b>MY ARMY: THE CHOSEN ONES</b></h1> */}
       {selectedBots &&
         selectedBots.map((bot) => (
           <div
             key={bot.id}
             className="max-w-sm rounded overflow-hidden shadow-lg bg-green-500 mb-5 "
+            onClick={() => removeFromArmy(bot)}
           >
             <img className="w-full" src={bot.avatar_url} alt={bot.name} />
             <div className="px-6 py-4">
