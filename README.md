@@ -5,7 +5,7 @@
 #### By *Ian M. Mworia*
 
 ## Web Link
-https://bankofmworia.netlify.app/
+https://botbattler.netlify.app/
 
 ## Description
 This is a react web application that showcases robots, that you can view their specs, enlist them in your Army and at the same time de-list them. You can also sort them by health, damage or armor.
