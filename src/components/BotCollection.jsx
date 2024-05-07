@@ -7,7 +7,7 @@ function BotCollection() {
   const [selectedBots, setSelectedBots] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/bots")
+    fetch("https://my-json-server.typicode.com/Mworia-Ian/bot-battlr/bots")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
